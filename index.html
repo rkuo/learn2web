@@ -8,14 +8,14 @@
 	</script>
 </head>
 <body>
-	<div ng-init="movies = [
+	<div ng-init = "movies = [
 	{name:'Big City', date: '2012-10-10'},
 	{name:'Godfather', date: '1970-1-1'}
 	]">
 	<h3> I saw {{movies.length}} of his movies and they are:</h3>
 	<ul>
 		<li ng-repeat="movie in movies">
-			I saw {{movie.name}} in {{movie.date}}.
+			{{movie.name}}, {{movie.date}}.
 		</li>
 	</ul>
 </div>

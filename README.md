@@ -4,15 +4,14 @@ title: learn to write web page with AngularJS and Bootstrap
 tags:
  
 - AngularJS
-- Bootstrap
-
 ---
 
-As the first step to learn how to write a webpage with AngularJS and Bootstrap.
+As the first step to learn how to write a webpage with AngularJS.
 
 [TOC]
 
 ## References
+[tool - plnkr](http://plnkr.co/)
 
 ## Basic
 
@@ -36,7 +35,7 @@ As the first step to learn how to write a webpage with AngularJS and Bootstrap.
     
 ## Add AngularJS
 
-- add `ng-app` to `<body>` or `<html>` tag to indicate this will be AngularJS application.
+- add `ng-app` to `<body>` or `<html>` tag to indicate this will be AngularJS application. From [angularJS doc]()Use this directive to auto-bootstrap an AngularJS application. The ngApp directive designates the root element of the application and is typically placed near the root element of the page - e.g. on the <body> or <html> tags.
 
 ```
 <body ng-app>
@@ -70,11 +69,14 @@ We cab add an input tag to get input from user. `ng-model ` will hold the text v
 placeholder will act as part of prompt.
 
 ### from ng-init
-refer to: [ng-repeat car example](http://www.c-sharpcorner.com/UploadFile/cd7c2e/using-ng-init-and-ng-repeat-directive-of-angularjs-in-asp-ne/)
+refer to: 
+- [ng-repeat car example](http://www.c-sharpcorner.com/UploadFile/cd7c2e/using-ng-init-and-ng-repeat-directive-of-angularjs-in-asp-ne/)
 
-[ng-repeat friends example with filter](http://stackoverflow.com/questions/22271484/ng-class-in-ng-repeat-conditional-class-names-depending-on-the-item-parameters)
+- [ng-repeat doc](https://docs.angularjs.org/api/ng/directive/ngRepeat)
 
-- add a initial value by adding `<div ng-init> ... </div>` and `ng-repeat` and `example-animate-container`
+- [ng-repeat friends example with filter](http://stackoverflow.com/questions/22271484/ng-class-in-ng-repeat-conditional-class-names-depending-on-the-item-parameters)
+
+- add a initial value by adding `<div ng-init> ... </div>` and `ng-repeat` and `example-animate-container` 
 
 ```
 <body>
@@ -111,9 +113,10 @@ I simplified it by removing index field, works.
 	</ul>
 ```
 
-### from API
+In the middle of learning, I found a very well organized tutorial video and code samples. [Introduction to Angular.js in 50 Examples (part 1) - good](https://www.youtube.com/watch?v=TRrL5j3MIvo)
+**I switch my learning approach to this tutorial and use plunker too.**
+
+
 
 
 ## ToDo
-
-embed image ![alt text](https://drive.google.com/uc?id=FILE-ID)
