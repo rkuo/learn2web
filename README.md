@@ -70,12 +70,45 @@ We cab add an input tag to get input from user. `ng-model ` will hold the text v
 placeholder will act as part of prompt.
 
 ### from ng-init
-refer to: http://www.c-sharpcorner.com/UploadFile/cd7c2e/using-ng-init-and-ng-repeat-directive-of-angularjs-in-asp-ne/
+refer to: [ng-repeat car example](http://www.c-sharpcorner.com/UploadFile/cd7c2e/using-ng-init-and-ng-repeat-directive-of-angularjs-in-asp-ne/)
 
-- add a initial value by adding `<div ng-init> ... </div>` in the app,
+[ng-repeat friends example with filter](http://stackoverflow.com/questions/22271484/ng-class-in-ng-repeat-conditional-class-names-depending-on-the-item-parameters)
+
+- add a initial value by adding `<div ng-init> ... </div>` and `ng-repeat` and `example-animate-container`
 
 ```
+<body>
+	<div ng-init="movies = [
+	{name:'Big City', date: '2012-10-10'},
+	{name:'Godfather', date: '1970-1-1'}
+	]">
+	<h3> I saw {{movies.length}} of his movies and they are:</h3>
+	<ul class="example-animate-container">
+		<li class="animate-repeat" ng-repeat="movie in movies">
+			[{{$index + 1}}] I saw {{movie.name}} in {{movie.date}}.
+		</li>
+	</ul>
+</div>
+</body>
 
+```
+It turns out the simple version, without container class, will work. I am sure there is role for the container class. We will use simple version for now. 
+
+```
+	<ul>
+		<li ng-repeat="movie in movies">
+			[{{$index + 1}}] I saw {{movie.name}} in {{movie.date}}.
+		</li>
+	</ul>
+```
+I simplified it by removing index field, works.
+
+```
+	<ul>
+		<li ng-repeat="movie in movies">
+			I saw {{movie.name}} in {{movie.date}}.
+		</li>
+	</ul>
 ```
 
 ### from API
