@@ -57,10 +57,26 @@ As the first step to learn how to write a webpage with AngularJS and Bootstrap.
 - You can put a expression in `{{}}`; AngularJS evaluate the expression, then put the results in there.
 
 ## Data 
+There are various way to get data into webpage.
 
 ### get from user input
+We cab add an input tag to get input from user. `ng-model ` will hold the text value, which may be used in the page.
+
+`
+<input type="text" ng-model="name" placeholder="your name">`
+
+`<p>hello, {{ name }}!</p>`	
+
+placeholder will act as part of prompt.
 
 ### from ng-init
+refer to: http://www.c-sharpcorner.com/UploadFile/cd7c2e/using-ng-init-and-ng-repeat-directive-of-angularjs-in-asp-ne/
+
+- add a initial value by adding `<div ng-init> ... </div>` in the app,
+
+```
+
+```
 
 ### from API
 
